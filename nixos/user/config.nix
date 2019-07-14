@@ -25,7 +25,7 @@
         universal-ctags
         wget
         # leiningen
-        (import <nixos-unstable> {}).neovim
+        (callPackage (import ./packages/neovim.nix) {})
       ];
     };
   };
