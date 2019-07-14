@@ -1,7 +1,6 @@
-{ config, pkgs, lib, ... }:                                                                                                                             [3
+{ config, pkgs, lib, ... }:
 {
-  # goes in /etc/nixos/configuration.nix
-
+  # lives in /etc/nixos/configuration.nix
   # NixOS wants to enable GRUB by default
   boot.loader.grub.enable = false;
 
@@ -30,7 +29,6 @@
       device = "/dev/disk/by-label/NIXOS_BOOT";
       fsType = "vfat";
     };
-
     "/" = {
       device = "/dev/disk/by-label/NIXOS_SD";
       fsType = "ext4";
