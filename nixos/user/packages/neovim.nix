@@ -3,6 +3,11 @@
 with pkgs; (import <nixos-unstable> {}).neovim.override {
   configure = {
     customRC = lib.readFile ~/.config/nvim/init.vim;
-    plug.plugins = with pkgs.vimPlugins; [fzf-vim fzfWrapper];
+    vam.knownPlugins = pkgs.vimPlugins;
+    vam.pluginDictionaries = [
+      { name = "fzf-vim"; }
+      { name = "fzfWrapper"; }
+    ];
   };
+  #  plug.plugins = with pkgs.vimPlugins; [fzf-vim fzfWrapper];
 }
