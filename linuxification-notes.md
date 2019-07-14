@@ -22,3 +22,7 @@ check if clojure is buildable on a digital ocean nixos server
 figure out how to edit vimrc without doing full rebuild
 
 figure out osx-keychain for linux
+
+
+
+fix: `packet_write_wait: Connection to 192.168.0.12 port 22: Broken pipe` on poweroff
