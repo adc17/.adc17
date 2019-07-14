@@ -17,3 +17,8 @@ aarch64 doesn't have an openjdk8 build?
 
 
 check if clojure is buildable on a digital ocean nixos server
+
+
+figure out how to edit vimrc without doing full rebuild
+
+figure out osx-keychain for linux
