@@ -19,10 +19,11 @@
         ripgrep
         ruby
         rustup
-	      stack
+        stack
         tmux
         tree
         universal-ctags
+	unzip
         wget
         # leiningen
         (callPackage (import ./packages/neovim.nix) {})
