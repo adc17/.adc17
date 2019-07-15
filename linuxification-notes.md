@@ -13,13 +13,11 @@ debug neovim startup time
 different python/python3_host_prog s on nixos
 
 
-aarch64 doesn't have an openjdk8 build?
+aarch64 doesn't have an openjdk8 build? no
 
 
-check if clojure is buildable on a digital ocean nixos server
+check if clojure is buildable on a digital ocean nixos server (or any 86_64 server)
 
-
-figure out how to edit vimrc without doing full rebuild
 
 figure out osx-keychain for linux
 
