@@ -23,3 +23,8 @@ figure out osx-keychain for linux
 
 
 fix: `packet_write_wait: Connection to 192.168.0.12 port 22: Broken pipe` on poweroff
+
+
+fix slow command prompt loading
+
+autocmd on vim finished loading buffer event
