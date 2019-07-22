@@ -46,6 +46,10 @@
   * Put them back—only fancy case is arq, for which instructions are [here](https://www.arqbackup.com/documentation/pages/recovering.html). 
   * Click restore once you've added the account.
   * Settings are saved with backup, you only need to note the general advanced preferences.
+5. Firefox
+  * Customize
+  * Extensions, themes
+  * Search
 
 ## Misc
 * Put back your system fonts.
