@@ -12,6 +12,7 @@
   boot.loader.raspberryPi.enable = true;
   boot.loader.raspberryPi.version = 3;
   boot.loader.raspberryPi.uboot.enable = true;
+  boot.loader.raspberryPi.uboot.configurationLimit = 3;
   boot.loader.raspberryPi.firmwareConfig = ''
     gpu_mem=256
   '';

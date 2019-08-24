@@ -7,13 +7,13 @@
     adcPackages = pkgs.buildEnv {
       name = "adc-packages";
       paths = [
-        # clojure
+        clojure
         fd
         fzf
         gcc
         git
         htop
-      	# openjdk
+      	openjdk
         python2
         python3
         ripgrep
@@ -23,9 +23,9 @@
         tmux
         tree
         universal-ctags
-	unzip
+        unzip
         wget
-        # leiningen
+        leiningen
         (callPackage (import ./packages/neovim.nix) {})
       ];
     };
