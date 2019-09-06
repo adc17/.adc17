@@ -25,6 +25,9 @@ if [ -n "${commands[fzf-share]}" ]; then
   source "$(fzf-share)/key-bindings.zsh"
 fi
 
+# fzf for others
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
 if [[ "$OSTYPE" == darwin* ]]; then
   # export LANG="en_CA.UTF-8"
   # export LC_ALL="en_CA.UTF-8"
@@ -42,9 +45,6 @@ if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc
 
 # use <c-s> in all applications
 stty -ixon
-
-# Source fzf
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 ### Added by Zplugin's installer: https://github.com/zdharma/zplugin
 # Check back for rollback feature: https://github.com/zdharma/zplugin/issues/135#issuecomment-497585546
