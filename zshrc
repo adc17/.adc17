@@ -65,6 +65,7 @@ zplugin snippet OMZ::lib/completion.zsh
 zplugin ice wait"0" lucid blockf
 zplugin light zsh-users/zsh-completions
 
+# n.b. this will be cached and require deleting if there are changes
 zplugin ice wait"0" lucid blockf
 zplugin snippet $HOME/dotfiles/zsh-completions-personal.zsh
 
