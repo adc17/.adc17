@@ -1,5 +1,7 @@
 # Complete g like git
 compdef g=git
 
-if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
-if [ $commands[kubectl] ]; then compdef k=kubectl; fi
+if [ -x "$(command -v kubectl)" ]; then 
+  source <(kubectl completion zsh)
+  compdef k=kubectl
+fi
