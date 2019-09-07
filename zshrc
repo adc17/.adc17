@@ -18,7 +18,14 @@ if [[ "$OSTYPE" == darwin* ]]; then
   export PATH="$GOPATH/bin:$PATH"
   # Add n (nvm alternative) to PATH
   export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+
+
+  export HOMEBREW_NO_INSTALL_CLEANUP="true"
+  export NIX_REMOTE_SYSTEMS="/etc/nix/machines"
 fi
+
+# export LANG="en_CA.UTF-8"
+# export LC_ALL="en_CA.UTF-8"
 
 # fzf for nixos
 if [ -n "${commands[fzf-share]}" ]; then
@@ -27,15 +34,6 @@ fi
 
 # fzf for others
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  # export LANG="en_CA.UTF-8"
-  # export LC_ALL="en_CA.UTF-8"
-  export HOMEBREW_NO_INSTALL_CLEANUP="true"
-  export NIX_CHANNEL="nixos-19.03"
-  export NIX_REMOTE_SYSTEMS="/etc/nix/machines"
-fi
-
 
 # Neovim colors
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
